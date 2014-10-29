@@ -33,17 +33,17 @@ describe( 'slow: phantom: e2e tests', function() {
 
         it( 'should show the search prompt as we type the text', function( done ) {
         
-            cfg.browser.pageOpenSuccessAll( 'http://google.com/', function( page ) {
+            browser.pageOpenSuccessAll( 'http://google.com/', function( page ) {
 
                 expectPage();
 
                 function expectPage() {
-                
-                    page.expectClientSelector( 'form[action="/search"] input[role="combobox"]', fillForm );
+                    console.log( '* expecting search textbox to appear' );
+                    page.expectClientSelector( 'form[action="/search"] input[name="q"]', fillForm );
                 }
 
                 function fillForm() {
-
+                    console.log( '* filling form' );
                     page.clientReadyFormFill(
                         {
                             form   : 'form[action="/search"]',
@@ -58,7 +58,7 @@ describe( 'slow: phantom: e2e tests', function() {
                 }
 
                 function sendSearchRequest() {
-
+                    console.log( '* submitting form' );
                     page.clientTest(
                         function() {
                         
@@ -71,7 +71,7 @@ describe( 'slow: phantom: e2e tests', function() {
                 }
 
                 function expectSearchResults() {
-                
+                    console.log( '* expecting search results to appear' );
                     page.expectClientSelector( '#topstuff', page.thenClose( done ) );
                 }
             } )            
@@ -79,6 +79,7 @@ describe( 'slow: phantom: e2e tests', function() {
     } )
     
 } )
+
 ```
 
 $ `mocha`

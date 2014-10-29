@@ -1,6 +1,6 @@
 {
-    "name"   : "testlab",
-    "version : "0.1.0",
+    "name"    : "testlab",
+    "version" : "0.1.0",
 
     "description" : "NodeJS Mocha + PhantomJS e2e Testing Module",
 
@@ -38,7 +38,7 @@
         "testing"
     ],
 
-    author : {
+    "author" : {
         "name"  : "Taras Mykhailovych",
         "email" : "tarquas@gmail.com",
         "url"   : "http://prywit.com/tarquas/"
@@ -48,6 +48,6 @@
 
     "repository" : {
         "type" : "git",
-        "url"  : "http://github.com/tarquas/testlab.git",
+        "url"  : "http://github.com/tarquas/testlab.git"
     }
 }
