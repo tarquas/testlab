@@ -1,0 +1,53 @@
+{
+    "name"   : "testlab",
+    "version : "0.1.0",
+
+    "description" : "NodeJS Mocha + PhantomJS e2e Testing Module",
+
+    "license" : "MIT",
+
+    "homepage" : "http://prywit.com/projects/testlab/",
+    
+    "main"  : "./lib/v0/testlab.js",
+
+    "dependencies" : {
+        "node-phantom-simple" : "^1.2.0",
+        "phantomjs"           : "^1.9.10"
+    },
+    
+    "files" : [
+        "./lib/v0"
+    ],
+
+    "bugs" : {
+        "url"   : "https://github.com/tarquas/testlab/issues",
+        "email" : "tarquas@gmail.com"
+    },
+
+    "directories" : {
+        "lib" : "./lib"
+    },
+    
+    "keywords" : [
+        "e2e",
+        "mocha",
+        "phantom",
+        "phantomjs",
+        "qa",
+        "tests",
+        "testing"
+    ],
+
+    author : {
+        "name"  : "Taras Mykhailovych",
+        "email" : "tarquas@gmail.com",
+        "url"   : "http://prywit.com/tarquas/"
+    },
+
+    "contributors" : [ ],
+
+    "repository" : {
+        "type" : "git",
+        "url"  : "http://github.com/tarquas/testlab.git",
+    }
+}
