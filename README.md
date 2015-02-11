@@ -7,7 +7,7 @@ This is official code repository of this project.
 
 ## Project Official Website
 
-http://prywit.com/projects/testlab/
+http://194.44.203.87/projects/testlab/
 
 # Installation
 
